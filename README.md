@@ -47,6 +47,8 @@ cd GPT-Helper/client
 npm install
 ```
 
+### Backend
+
 ```
 cd ../backend
 npm install
@@ -63,7 +65,7 @@ Add to the file:
 REACT_APP_OPENAI_KEY=yourkey
 ```
 
-Then just `npm start` inside the client directory and open another terminal and run `npm start` inside the backend directory.
+Then just `npm start` inside the client directory and open another terminal and run `node server.js` inside the backend directory.
 Keep in mind, for this to function properly you will need mongoDB running. You might have to change the connection
 to the address your system is running it on. You can change the connection string in the server.js file.
 
