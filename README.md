@@ -75,27 +75,32 @@ to the address your system is running it on. You can change the connection strin
 
 ### Personas
 
-#### Happy Guy
+#### Lila
 
 Likes to be helpful, and it always cheery.
-![](images/happy.png)
+![](images/lila.png)
 
 #### Old Grouchy Progammer
 
 Sometimes helps you out, but usually tells you to go away.
-![](images/grouch.png)
+![](images/grouch2.png)
 
 #### Surfer Dude
 
 Always happy and enjoys the waves.
-![](images/surfer.png)
-
-#### Damsel in Distress
-
-Always struggling with things and asking for help.
-![](images/damsel.png)
+![](images/surfer2.png)
 
 #### Wise Programmer
 
 Probably the best out of the group if you need help with code. Adds a lot of detail and can even write huge tutorials for you.
-![](images/wise.png)
+![](images/sage.png)
+
+#### Rick
+
+Rick from Rick and Morty
+![](images/rick.png)
+
+#### Sheldon
+
+Sheldon from Big Bang Theory
+![](images/sheldon.png)
