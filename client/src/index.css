@@ -94,11 +94,12 @@ p {
 /* ╭────────────────────────────╮ */
 /* │           Input            │ */
 /* ╰────────────────────────────╯ */
+
 .input-text {
-    height: 28px;
-    padding: 5px;
+    padding: 10px;
     border-radius: 5px;
     border: none;
+    resize: none;
 }
 .input-text-lg {
     color: antiquewhite;
