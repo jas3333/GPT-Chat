@@ -256,12 +256,16 @@ img {
 }
 
 .settings {
-    border: solid 1px antiquewhite;
+    background-color: #292f35;
     border-radius: 5px;
     padding: 1.5rem;
     position: fixed;
-    top: 5%;
-    right: 5%;
+    top: 11%;
+    right: 1%;
+    transition: ease all 0.5s;
+}
+.hide {
+    transform: translateY(-200%);
 }
 
 .modal {
@@ -345,10 +349,6 @@ img {
     width: 100%;
     height: 1px;
     background-color: var(--fc-light);
-}
-
-.hide {
-    display: none;
 }
 
 /* blockquote { */

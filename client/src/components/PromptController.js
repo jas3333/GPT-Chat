@@ -1,5 +1,3 @@
-import { useState } from 'react';
-import Modal from './Modal';
 import Personas from './Personas';
 const PromptController = ({
     temperature,
@@ -15,13 +13,13 @@ const PromptController = ({
     setThreadSize,
     threadSize,
     setChatResponse,
-    onSave,
     setShowModal,
+    showSettings,
 }) => {
     const personasArray = Object.entries(personas);
 
     return (
-        <div className='settings mg-top-vlg'>
+        <div className={`${showSettings ? 'settings shadow ' : 'settings hide '}`}>
             <form className='container-col '>
                 <label htmlFor='temperature'>{`Temperature: ${temperature}`}</label>
                 <input

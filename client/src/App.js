@@ -12,8 +12,11 @@ function App() {
     const [category, setCategory] = useState('question');
     const [title, setTitle] = useState('');
 
+    const [showSettings, setShowSettings] = useState(true);
+
     const forHome = {
         // Functions
+        setShowSettings,
         setChatResponse,
         setShowModal,
         setCategory,
@@ -21,6 +24,7 @@ function App() {
 
         // State
         chatResponse,
+        showSettings,
         showModal,
         category,
         title,
@@ -29,7 +33,7 @@ function App() {
     return (
         <div className='container '>
             <Router>
-                <Navbar />
+                <Navbar setShowSettings={setShowSettings} showSettings={showSettings} />
                 <Routes>
                     <Route path='/' element={<Home {...forHome} />} />
                     <Route

@@ -1,8 +1,7 @@
 import { useState } from 'react';
 import { FaCog } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
-const Navbar = () => {
-    const [showSettings, setShowSettings] = useState(true);
+const Navbar = ({ showSettings, setShowSettings }) => {
     return (
         <nav className='navbar'>
             <h1 className='mg-left-lg'>GPT Chat</h1>
@@ -13,7 +12,7 @@ const Navbar = () => {
                 <Link className='nav-links mg-right-lg' to='/conversations'>
                     Conversations
                 </Link>
-                <FaCog className='icon pointer' />
+                <FaCog className='icon pointer' onClick={() => setShowSettings(!showSettings)} />
             </div>
         </nav>
     );
