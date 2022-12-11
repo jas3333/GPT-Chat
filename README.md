@@ -37,7 +37,7 @@ Talking to a caveman has been hilarious.
 git clone the repo:
 
 ```
-git clone https://github.com/jas3333/GPT-Helper
+git clone https://github.com/jas3333/GPT-Chat
 ```
 
 ### Client
