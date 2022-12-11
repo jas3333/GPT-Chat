@@ -29,6 +29,7 @@ app.get('/api', async (req, res) => {
             console.log(error);
         } else {
             res.send(conversations);
+            console.log('Sending conversations', conversations);
         }
     });
 });
