@@ -10,7 +10,7 @@ const Modal = ({ setShowModal, setTitle, setCategory, onSave, title, category })
                         type='text'
                         name='title'
                         value={title}
-                        className='input-text'
+                        className='input-text-modal'
                         onChange={(event) => setTitle(event.target.value)}
                         placeholder='Enter a title'
                     />

@@ -120,6 +120,10 @@ textarea {
     border-bottom-left-radius: 10px;
     border: none;
 }
+.input-text-modal {
+    padding: 5px;
+    border-radius: 5px;
+}
 .input-text-lg:focus {
     outline-style: none;
 }
