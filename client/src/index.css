@@ -12,7 +12,8 @@
     --dark-red: #330a11;
 
     --bg-main: #292b31;
-    --background-dark: #1f2025;
+    /* --background-dark: #1f2025; */
+    --background-dark: #13161b;
     --fc-light: #d1d3d7;
     --fc-fade: #767b87;
     --color-blend: #676c7a;
@@ -558,11 +559,14 @@ img {
     background-color: red;
 }
 .bg-mid {
-    background-color: #333b40;
+    background-color: #222b36;
 }
 
 .bg-blend {
     background-color: var(--color-blend);
+}
+.bg-dark {
+    background-color: #111418;
 }
 
 /* ╭────────────────────────────╮ */
@@ -610,7 +614,7 @@ img {
     width: 35px;
     height: 35px;
     background-color: #667581;
-    margin: auto 0px 3px 0px;
+    margin: auto 0px 8px 0px;
     border-radius: 100%;
     -webkit-animation: sk-scaleout 1s infinite ease-in-out;
     animation: sk-scaleout 1s infinite ease-in-out;
@@ -624,7 +628,7 @@ img {
     border-right: solid 1px antiquewhite;
     border-bottom: solid 1px antiquewhite;
     border-top-right-radius: 10px;
-    background-color: #333b40;
+    background-color: #222b36;
 }
 .size-form-special {
     width: 910px;

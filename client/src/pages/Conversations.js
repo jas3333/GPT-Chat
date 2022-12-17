@@ -1,16 +1,19 @@
 import { useState, useEffect } from 'react';
+import { redirect, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 
 import Conversation from '../components/Conversation';
 
 const Conversations = ({ setChatResponse, chatResponse }) => {
     const [data, setData] = useState([]);
+    const navigate = useNavigate();
 
     const restoreConversation = (id) => {
         const restored = data.filter((item) => item._id === id);
         const conversations = restored[0].conversation.slice(0, restored[0].conversation.length);
 
         setChatResponse(conversations);
+        navigate('/');
     };
 
     const getData = async () => {

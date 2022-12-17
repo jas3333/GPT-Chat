@@ -54,6 +54,8 @@ const Home = ({
         }
     };
 
+    console.log(conversation);
+
     const onSubmit = async (event) => {
         event.preventDefault();
 
