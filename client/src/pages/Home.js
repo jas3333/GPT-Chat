@@ -30,7 +30,7 @@ const Home = ({
     const [threadSize, setThreadSize] = useState(1);
 
     // Values for Prompt
-    const [question, setQuestion] = useState('');
+    // const [question, setQuestion] = useState('');
     const [conversation, setConversation] = useState('');
 
     // Sets the prompt with instructions.
@@ -56,8 +56,9 @@ const Home = ({
 
     console.log(conversation);
 
-    const onSubmit = async (event) => {
+    const onSubmit = async (event, question) => {
         event.preventDefault();
+        console.log(question);
 
         setLoading(true);
         const options = {
@@ -80,13 +81,13 @@ const Home = ({
 
         try {
             const response = await axios.post('https://api.openai.com/v1/completions', promptData, options);
+            console.log(response);
             const newChat = {
                 botResponse: response.data.choices[0].text,
                 promptQuestion: question,
                 totalTokens: response.data.usage.total_tokens,
             };
 
-            setQuestion('');
             setLoading(false);
             setChatResponse([...chatResponse, newChat]);
         } catch (error) {
@@ -111,7 +112,7 @@ const Home = ({
     }, [chatResponse, threadSize]);
 
     // Props for Prompt component
-    const forPrompt = { question, setQuestion, onSubmit, loading };
+    const forPrompt = { onSubmit, loading };
 
     // Props for PromptController
     const forPrompController = {

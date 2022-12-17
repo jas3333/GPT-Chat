@@ -1,18 +1,20 @@
 import { useState } from 'react';
 
-const Prompt = ({ question, setQuestion, onSubmit, loading }) => {
+const Prompt = ({ onSubmit, loading }) => {
     const [rows, setRows] = useState(1);
+    const [question, setQuestion] = useState('');
 
     const handleKeyDown = (event) => {
         if (event.key === 'Enter' && event.shiftKey && rows !== 5) {
             setRows(rows + 1);
         }
     };
-    const handleSubmit = (event) => {
+    const handleSubmit = async (event) => {
         if (event.keyCode === 13 && !event.shiftKey) {
             event.preventDefault();
             setRows(1);
-            onSubmit(event);
+            await onSubmit(event, question);
+            setQuestion('');
         }
     };
     return (
